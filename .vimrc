@@ -1,0 +1,42 @@
+set nocompatible
+filetype off  
+
+set rtp+=~/.vim/bundle/vundle/
+
+call vundle#begin()
+
+filetype plugin indent on     
+
+"репозитории на github
+Bundle 'tpope/vim-fugitive'
+
+Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-commentary'
+Plugin 'vim-scripts/JavaScript-Indent'
+Plugin 'tpope/vim-git'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-bundler'
+Plugin 'guns/vim-clojure-static'
+Plugin 'tpope/vim-leiningen'
+Plugin 'vim-scripts/paredit.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'ecomba/vim-ruby-refactoring'	  "http://justinram.wordpress.com/2010/12/30/vim-ruby-refactoring-series/
+Plugin 'vim-scripts/ScrollColors'	  ":SCROLL
+
+call vundle#end()
+
+"репозитории vim/scripts
+"Bundle 'L9'
+
+"git репозитории (не на github)
+"Bundle 'git://git.wincent.com/command-t.git'
+
+"локальные git репозитории(если работаете над собственным плагином)
+"Bundle 'file:///Users/gmarik/path/to/plugin'
+
+set nu 
+set sw=2 
+set sts=2 
