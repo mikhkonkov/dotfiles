@@ -25,6 +25,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'ecomba/vim-ruby-refactoring'	  "http://justinram.wordpress.com/2010/12/30/vim-ruby-refactoring-series/
 Plugin 'vim-scripts/ScrollColors'	  ":SCROLL
+Plugin 'tpope/vim-endwise'
 
 call vundle#end()
 
