@@ -1,3 +1,5 @@
+" git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle 
+
 set nocompatible
 filetype off  
 
@@ -8,8 +10,9 @@ call vundle#begin()
 filetype plugin indent on     
 
 "репозитории на github
-Bundle 'tpope/vim-fugitive'
+Plugin 'gmarik/vundle'
 
+Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
