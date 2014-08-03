@@ -44,3 +44,6 @@ call vundle#end()
 set nu 
 set sw=2 
 set sts=2 
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
