@@ -72,6 +72,9 @@
   filelog = log -u                  # show changes to a file
   mt = mergetool                    # fire up the merge tool
 
+  # merge
+  mn = merge --no-ff                # merge feature branch
+
   # stash
   ss = stash                        # stash changes
   sl = stash list                   # list stashes
@@ -111,6 +114,7 @@
   default = tracking
 [core]
   autocrlf = false
+	editor = vim
 [advice]
   statusHints = false
 [diff]
@@ -122,12 +126,6 @@
   # Remember my merges
   # http://gitfu.wordpress.com/2008/04/20/git-rerere-rereremember-what-you-did-last-time/
   enabled = true
-[include]
-  path = .gitconfig.user
 [user]
 	name = Konkov Mikhail
 	email = mikhkonkov@gmail.com
-[credential]
-	helper = osxkeychain
-[push]
-	default = simple
